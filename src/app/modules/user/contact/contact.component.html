@@ -1,36 +1,48 @@
-<section id="contact" class="py-24 px-6 sm:px-12 md:px-24 bg-gradient-to-br from-[#0A0A0A] to-[#1B1B1B] text-white text-center">
-  <h3 class="text-3xl md:text-4xl font-bold mb-6">Ready to Build Your Brand?</h3>
-  <p class="text-gray-300 text-lg max-w-3xl mx-auto mb-12">
-    Let’s turn your name into a powerful, profitable brand. Fill out the form — and let’s get started.
-  </p>
+<section id="contact" class="py-24 px-6 sm:px-12 lg:px-16 bg-gradient-to-br from-[#0A0A0A] to-[#1B1B1B] text-white">
+  <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
+    <!-- Left Column - Form -->
+    <div class="lg:w-1/2">
+      <div class="text-center lg:text-left">
+        <h3 class="text-3xl md:text-4xl font-bold mb-6">Ready to Build Your Brand?</h3>
+        <p class="text-gray-300 text-lg max-w-lg mx-auto lg:mx-0 mb-12">
+          Let's turn your name into a powerful, profitable brand. Fill out the form — and let's get started.
+        </p>
+      </div>
 
-  <form class="max-w-2xl mx-auto bg-white/5 backdrop-blur-md border border-white/10 p-8 rounded-2xl shadow-lg space-y-6">
+      <form class="bg-white/5 backdrop-blur-md border border-white/10 p-8 rounded-2xl shadow-lg space-y-6">
+        <!-- Name -->
+        <div class="text-left">
+          <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Your Name*</label>
+          <input type="text" id="name" name="name" placeholder="John Doe" required
+            class="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+        </div>
 
-    <!-- Name -->
-    <div class="text-left">
-      <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Your Name</label>
-      <input type="text" id="name" name="name" placeholder="John Doe"
-        class="w-full px-4 py-3 bg-transparent border border-white/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+        <!-- Email -->
+        <div class="text-left">
+          <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email Address*</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required
+            class="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 transition">
+        </div>
+
+        <!-- Message -->
+        <div class="text-left">
+          <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Your Message*</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us about your project..." required
+            class="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"></textarea>
+        </div>
+
+        <!-- CTA Button -->
+        <button type="submit"
+          class="w-full py-3.5 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 rounded-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]">
+          🚀 Start Building My Brand
+        </button>
+      </form>
     </div>
 
-    <!-- Email -->
-    <div class="text-left">
-      <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email Address</label>
-      <input type="email" id="email" name="email" placeholder="you@example.com"
-        class="w-full px-4 py-3 bg-transparent border border-white/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 transition">
+    <!-- Right Column - Illustration -->
+    <div class="lg:w-1/2 hidden lg:block">
+      <img src="contact.svg" alt="Brand building illustration"
+           class="w-full h-auto max-w-xl mx-auto">
     </div>
-
-    <!-- Message -->
-    <div class="text-left">
-      <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Your Message</label>
-      <textarea id="message" name="message" rows="5" placeholder="Tell us where you need help..."
-        class="w-full px-4 py-3 bg-transparent border border-white/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"></textarea>
-    </div>
-
-    <!-- CTA Button -->
-    <button type="submit"
-      class="w-full py-3 bg-gradient-to-r from-blue-500 to-purple-600 hover:scale-105 transition rounded-full font-semibold text-white shadow-md">
-      🚀 Start Building My Brand
-    </button>
-  </form>
+  </div>
 </section>
