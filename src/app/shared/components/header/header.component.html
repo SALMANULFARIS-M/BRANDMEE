@@ -26,7 +26,6 @@
     <nav class="hidden md:flex gap-8 items-center">
       <a
         [routerLink]="['/']"
-        fragment="home"
         class="group text-blue-400 relative px-4 py-2 text-sm uppercase font-mono tracking-wider hover:text-blue-500 transition-colors duration-300"
       >
         <span class="relative z-10">Home</span>
@@ -36,7 +35,6 @@
       </a>
       <a
         [routerLink]="['/about']"
-        fragment="about"
         class="group text-blue-400 relative px-4 py-2 text-sm uppercase font-mono tracking-wider hover:text-blue-500 transition-colors duration-300"
       >
         <span class="relative z-10">About</span>
@@ -46,7 +44,6 @@
       </a>
       <a
         [routerLink]="['/contact']"
-        fragment="contact"
         class="group text-blue-400 relative px-4 py-2 text-sm uppercase font-mono tracking-wider hover:text-blue-500 transition-colors duration-300"
       >
         <span class="relative z-10">Contact</span>
@@ -94,7 +91,6 @@
       <nav class="flex flex-col gap-4">
         <a
           [routerLink]="['/']"
-          fragment="hero"
           class="group relative px-4 py-2 text-sm uppercase font-mono tracking-wider hover:text-blue-400 transition-colors duration-300"
           (click)="mobileMenuOpen = false"
         >
@@ -104,8 +100,7 @@
           ></span>
         </a>
         <a
-          [routerLink]="['/']"
-          fragment="about"
+          [routerLink]="['/about']"
           class="group relative px-4 py-2 text-sm uppercase font-mono tracking-wider hover:text-blue-400 transition-colors duration-300"
           (click)="mobileMenuOpen = false"
         >
@@ -115,8 +110,7 @@
           ></span>
         </a>
         <a
-          [routerLink]="['/']"
-          fragment="contact"
+          [routerLink]="['/contact']"
           class="group relative px-4 py-2 text-sm uppercase font-mono tracking-wider hover:text-blue-400 transition-colors duration-300"
           (click)="mobileMenuOpen = false"
         >

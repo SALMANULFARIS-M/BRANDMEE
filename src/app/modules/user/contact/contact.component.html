@@ -1,48 +1,156 @@
-<section id="contact" class="py-24 px-6 sm:px-12 lg:px-16 bg-gradient-to-br from-[#0A0A0A] to-[#1B1B1B] text-white">
-  <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
-    <!-- Left Column - Form -->
-    <div class="lg:w-1/2">
-      <div class="text-center lg:text-left">
-        <h3 class="text-3xl md:text-4xl font-bold mb-6">Ready to Build Your Brand?</h3>
-        <p class="text-gray-300 text-lg max-w-lg mx-auto lg:mx-0 mb-12">
-          Let's turn your name into a powerful, profitable brand. Fill out the form — and let's get started.
-        </p>
-      </div>
 
-      <form class="bg-white/5 backdrop-blur-md border border-white/10 p-8 rounded-2xl shadow-lg space-y-6">
-        <!-- Name -->
-        <div class="text-left">
-          <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Your Name*</label>
-          <input type="text" id="name" name="name" placeholder="John Doe" required
-            class="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+<!-- Contact Form Section -->
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-black via-gray-900 to-black py-28 lg:py-32">
+
+  <div class="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.02)_1px,transparent_1px)] bg-[size:100px_100px]"></div>
+
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <!-- Centered Contact Us label -->
+        <div class="w-full flex justify-center mb-12">
+            <span class="inline-block px-4 py-2 bg-blue-400/10 border border-blue-400/20 rounded-full text-blue-400 font-mono text-sm uppercase tracking-wider">
+                // CONTACT US
+            </span>
         </div>
 
-        <!-- Email -->
-        <div class="text-left">
-          <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email Address*</label>
-          <input type="email" id="email" name="email" placeholder="you@example.com" required
-            class="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 transition">
-        </div>
+        <div class="max-w-4xl mx-auto flex flex-col lg:flex-row items-start gap-12 lg:gap-20">
+            <!-- Left Column - Form -->
+            <div class="lg:w-3/5 w-full">
+                <form class="bg-gradient-to-br from-gray-800/30 to-gray-900/30 backdrop-blur-glass p-8 sm:p-10 rounded-2xl border border-blue-400/20 relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-cyan-400"></div>
 
-        <!-- Message -->
-        <div class="text-left">
-          <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Your Message*</label>
-          <textarea id="message" name="message" rows="4" placeholder="Tell us about your project..." required
-            class="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"></textarea>
-        </div>
+                    <div class="space-y-6">
+                        <!-- Name -->
+                        <div class="text-left">
+                            <label for="name" class="block text-sm font-medium text-gray-300 mb-3 font-mono uppercase tracking-wider">
+                                Your Name*
+                            </label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required
+                                class="w-full px-4 py-4 bg-black/30 border border-gray-600/50 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all duration-300 input-glow">
+                        </div>
 
-        <!-- CTA Button -->
-        <button type="submit"
-          class="w-full py-3.5 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 rounded-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]">
-          🚀 Start Building My Brand
-        </button>
-      </form>
+                        <!-- Email -->
+                        <div class="text-left">
+                            <label for="email" class="block text-sm font-medium text-gray-300 mb-3 font-mono uppercase tracking-wider">
+                                Email Address*
+                            </label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required
+                                class="w-full px-4 py-4 bg-black/30 border border-gray-600/50 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent transition-all duration-300 input-glow">
+                        </div>
+
+                        <!-- Message -->
+                        <div class="text-left">
+                            <label for="message" class="block text-sm font-medium text-gray-300 mb-3 font-mono uppercase tracking-wider">
+                                Your Message*
+                            </label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required
+                                class="w-full px-4 py-4 bg-black/30 border border-gray-600/50 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent transition-all duration-300 resize-none input-glow"></textarea>
+                        </div>
+
+                        <!-- CTA Button -->
+                        <button type="submit"
+                            class="w-full py-4 bg-gradient-to-r from-blue-400 to-cyan-400 hover:from-blue-500 hover:to-cyan-500 rounded-xl font-bold text-black uppercase tracking-wider shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] glow-effect">
+                            🚀 Start Building My Brand
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Right Column - Contact Info -->
+            <div class="lg:w-2/5 w-full">
+                <div class="space-y-8">
+                    <!-- Contact Methods -->
+                    <div class="bg-gradient-to-br from-gray-800/30 to-gray-900/30 backdrop-blur-glass p-8 rounded-2xl border border-gray-700/50 hover:border-blue-400/50 transition-all duration-300">
+                        <h3 class="text-2xl font-bold mb-6 text-white">Get in Touch</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-gray-300 font-mono text-sm">EMAIL</p>
+                                    <p class="text-white">hellobrandmee.com</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-gray-300 font-mono text-sm">PHONE</p>
+                                    <p class="text-white">+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 bg-gradient-to-r from-purple-400 to-blue-400 rounded-full flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-gray-300 font-mono text-sm">LOCATION</p>
+                                    <p class="text-white">San Francisco, CA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Response Time -->
+                    <div class="bg-gradient-to-br from-gray-800/30 to-gray-900/30 backdrop-blur-glass p-8 rounded-2xl border border-gray-700/50">
+                        <h3 class="text-xl font-bold mb-4 text-white">Response Time</h3>
+                        <p class="text-gray-300 leading-relaxed">
+                            We typically respond within 24 hours. For urgent inquiries, please call us directly.
+                        </p>
+                        <div class="mt-4 flex items-center gap-2">
+                            <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                            <span class="text-green-400 font-mono text-sm">ONLINE NOW</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="py-20 lg:py-32 bg-gradient-to-br from-black via-gray-900 to-black relative">
+    <div class="absolute inset-0 overflow-hidden">
+        <div class="absolute top-1/4 right-1/4 w-64 h-64 rounded-full bg-purple-400/5 blur-3xl animate-float"></div>
+        <div class="absolute bottom-1/4 left-1/4 w-80 h-80 rounded-full bg-blue-400/5 blur-3xl animate-float-delay"></div>
     </div>
 
-    <!-- Right Column - Illustration -->
-    <div class="lg:w-1/2 hidden lg:block">
-      <img src="contact.svg" alt="Brand building illustration"
-           class="w-full h-auto max-w-xl mx-auto">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center mb-16">
+            <span class="inline-block px-4 py-2 bg-blue-400/10 border border-blue-400/20 rounded-full text-blue-400 font-mono text-sm uppercase tracking-wider mb-6">
+                FAQ
+            </span>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold">
+                <span class="text-white">Frequently Asked </span>
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400">Questions</span>
+            </h2>
+        </div>
+
+        <div class="max-w-4xl mx-auto space-y-6">
+            <div class="bg-gradient-to-br from-gray-800/30 to-gray-900/30 backdrop-blur-glass p-6 rounded-2xl border border-gray-700/50 hover:border-blue-400/50 transition-all duration-300">
+                <h3 class="text-xl font-semibold mb-3 text-white">How long does it take to build a personal brand?</h3>
+                <p class="text-gray-300 leading-relaxed">Typically 3-6 months to see significant results, depending on your industry and goals. We focus on sustainable, long-term growth.</p>
+            </div>
+
+            <div class="bg-gradient-to-br from-gray-800/30 to-gray-900/30 backdrop-blur-glass p-6 rounded-2xl border border-gray-700/50 hover:border-blue-400/50 transition-all duration-300">
+                <h3 class="text-xl font-semibold mb-3 text-white">What platforms do you focus on?</h3>
+                <p class="text-gray-300 leading-relaxed">We specialize in LinkedIn and other professional networks, but we also work with Twitter, Instagram, and industry-specific platforms.</p>
+            </div>
+
+            <div class="bg-gradient-to-br from-gray-800/30 to-gray-900/30 backdrop-blur-glass p-6 rounded-2xl border border-gray-700/50 hover:border-blue-400/50 transition-all duration-300">
+                <h3 class="text-xl font-semibold mb-3 text-white">Do you offer custom packages?</h3>
+                <p class="text-gray-300 leading-relaxed">Yes! Every client is unique, and we create tailored strategies based on your specific goals, industry, and target audience.</p>
+            </div>
+        </div>
     </div>
-  </div>
 </section>
