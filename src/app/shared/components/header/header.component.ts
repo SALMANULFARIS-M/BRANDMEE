@@ -9,10 +9,10 @@ import { NavigationEnd, Router, RouterModule } from '@angular/router';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
- mobileMenuOpen = false;
+  mobileMenuOpen = false;
   activeSection: string = '/';
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
 
   ngOnInit() {
     this.router.events.subscribe(event => {
@@ -46,6 +46,17 @@ export class HeaderComponent {
           break;
         }
       }
+    }
+  }
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: MouseEvent) {
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuButton = document.querySelector('.mobile-menu-button');
+
+    if (mobileMenu && menuButton &&
+      !menuButton.contains(event.target as Node) &&
+      !mobileMenu.contains(event.target as Node)) {
+      this.mobileMenuOpen = false;
     }
   }
 }

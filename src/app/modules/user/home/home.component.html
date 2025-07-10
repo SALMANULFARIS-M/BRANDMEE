@@ -1,66 +1,218 @@
 <!-- Futuristic Hero Section -->
 <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
-  <!-- Animated background elements -->
-  <div class="absolute inset-0 overflow-hidden z-0">
-    <div class="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-blue-400/10 blur-3xl animate-pulse"></div>
-    <div class="absolute bottom-1/3 right-1/3 w-96 h-96 rounded-full bg-cyan-400/5 blur-3xl animate-pulse delay-300"></div>
-    <div class="absolute top-1/3 right-1/4 w-80 h-80 rounded-full bg-purple-400/5 blur-3xl animate-pulse delay-700"></div>
-  </div>
+    <!-- Animated background elements -->
+    <div class="absolute inset-0 overflow-hidden">
+        <div class="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-blue-400/20 blur-3xl animate-float"></div>
+        <div class="absolute bottom-1/3 right-1/3 w-96 h-96 rounded-full bg-cyan-400/20 blur-3xl animate-float-delay"></div>
+        <div class="absolute top-1/3 right-1/4 w-80 h-80 rounded-full bg-purple-400/20 blur-3xl animate-float-delay-2"></div>
 
-  <!-- Main content -->
-  <div class="relative z-10 container mx-auto px-6 flex flex-col items-center text-center">
-    <!-- Headline with animated gradient -->
-    <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight tracking-tight">
-      <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-400 animate-gradient-x">
-        Your Name Deserves<br class="hidden md:inline"> to Be a Brand.
-      </span>
-    </h1>
-
-    <!-- Subheadline -->
-    <p class="text-lg md:text-2xl text-black/80 mb-12 max-w-3xl font-light leading-relaxed">
-      We help entrepreneurs become an authority in their niche
-    </p>
-
-    <!-- CTA Buttons -->
-    <div class="flex flex-col sm:flex-row gap-4 mb-16">
-      <button class="px-8 py-4 bg-gradient-to-r from-blue-400 to-cyan-400 text-black font-bold uppercase tracking-wider rounded-full hover:shadow-lg hover:shadow-blue-400/40 transition-all duration-300 transform hover:scale-105">
-        Start Your Journey
-      </button>
-      <button class="px-8 py-4 border-2 border-black/20 text-black font-bold uppercase tracking-wider rounded-full hover:bg-white/10 hover:border-blue-400 transition-all duration-300 transform hover:scale-105">
-        Learn More
-      </button>
+        <!-- Grid overlay -->
+        <div class="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.03)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
     </div>
 
-    <!-- Futuristic stats or social proof -->
-    <div class="flex flex-wrap justify-center gap-8 md:gap-16 text-center">
-      <div class="group">
-        <div class="text-4xl font-bold text-blue-400 mb-2 relative inline-block">
-          <span class="relative z-10">10K+</span>
-          <div class="absolute -inset-2 bg-blue-400/10 rounded-full scale-0 group-hover:scale-100 transition-transform duration-500"></div>
+    <!-- Main content -->
+    <div class="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center max-w-6xl">
+        <!-- Headline with animated gradient -->
+        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-6 sm:mb-8 leading-tight tracking-tight">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-400 animate-gradient-x block">
+                Your Name Deserves
+            </span>
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-blue-400 to-cyan-400 animate-gradient-x block mt-2">
+                to Be a Brand.
+            </span>
+        </h1>
+
+        <!-- Subheadline -->
+        <p class="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-8 sm:mb-12 max-w-4xl font-light leading-relaxed">
+            We help entrepreneurs become an authority in their niche
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 mb-12 sm:mb-16 w-full sm:w-auto">
+            <button class="px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-blue-400 to-cyan-400 text-black font-bold uppercase tracking-wider rounded-full hover:shadow-lg hover:shadow-blue-400/40 transition-all duration-300 transform hover:scale-105 text-sm sm:text-base">
+                Build my brand
+            </button>
+            <button class="px-6 sm:px-8 py-3 sm:py-4 border-2 border-white/20 text-white font-bold uppercase tracking-wider rounded-full hover:bg-white/10 hover:border-blue-400 transition-all duration-300 transform hover:scale-105 text-sm sm:text-base">
+                Learn More
+            </button>
         </div>
-        <p class="text-sm uppercase tracking-wider text-white/60">Brands Built</p>
+    </div>
+
+    <!-- Scrolling indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <svg class="w-6 h-6 sm:w-8 sm:h-8 text-white/50 hover:text-blue-400 transition-colors cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-20 px-6 sm:px-12 md:px-24 text-center bg-black">
+  <h3 class="text-3xl md:text-4xl font-bold mb-6 text-white">We don’t just build personal brands.
+, <span class="text-blue-400">We build authority.</span></h3>
+  <p class="text-gray-300 text-lg max-w-3xl mx-auto">
+    We’re not a traditional agency — we’re a modern personal branding powerhouse built for the digital age.
+    Our team of <span class="text-white font-medium">strategists</span>, <span class="text-white font-medium">creators</span>, and <span class="text-white font-medium">storytellers</span> understands what it takes to grow your influence and build trust online.
+  </p>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="py-20 px-6 sm:px-12 md:px-24 bg-white border-y border-white/10 text-center">
+  <h3 class="text-3xl md:text-4xl font-bold mb-12 text-black">What We Do</h3>
+  <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto text-left">
+
+    <!-- Service 1 -->
+    <div class="bg-white/5 backdrop-blur-md p-6 rounded-2xl border border-white/10 shadow-xl hover:shadow-blue-500/20 transition">
+      <h4 class="text-xl font-semibold text-blue-600 mb-3">Position You as an Expert</h4>
+      <p class="text-gray-800 text-sm">
+        We craft a brand strategy that highlights your strengths, values, and unique voice to help you earn trust and respect in your field.
+      </p>
+    </div>
+
+    <!-- Service 2 -->
+    <div class="bg-white/5 backdrop-blur-md p-6 rounded-2xl border border-white/10 shadow-xl hover:shadow-purple-500/20 transition">
+      <h4 class="text-xl font-semibold text-purple-600 mb-3">Create Content that Connects</h4>
+      <p class="text-gray-800 text-sm">
+        Our creators produce impactful content that speaks directly to your audience, builds emotional connection, and boosts engagement.
+      </p>
+    </div>
+
+    <!-- Service 3 -->
+    <div class="bg-white/5 backdrop-blur-md p-6 rounded-2xl border border-white/10 shadow-xl hover:shadow-indigo-500/20 transition">
+      <h4 class="text-xl font-semibold text-indigo-600 mb-3">Grow Your Digital Presence</h4>
+      <p class="text-gray-800 text-sm">
+        From LinkedIn to every relevant platform, we grow your presence with a clear purpose — so you’re not just visible, but valuable.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Why Choose Us Section -->
+<section id="why-us" class="py-24 px-6 sm:px-12 md:px-24 text-center bg-black">
+  <h3 class="text-3xl md:text-4xl font-bold mb-6 text-white">Why BrandMe?</h3>
+  <p class="text-gray-300 text-lg max-w-3xl mx-auto mb-12">
+    We’re not just a service provider — we’re your personal branding partner in the digital age. We don’t follow trends, we help you <span class="text-white font-semibold">set them</span>.
+  </p>
+
+  <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto text-left">
+
+    <!-- Edge 1 -->
+    <div class="bg-white/5 p-6 rounded-2xl border border-white/10 backdrop-blur-md shadow-lg hover:shadow-blue-600/20 transition">
+      <h4 class="text-lg font-semibold text-blue-400 mb-2">Built for the Digital Era</h4>
+      <p class="text-sm text-gray-300">
+        Traditional branding doesn’t work online. We build modern digital-first personal brands optimized for LinkedIn, content, and community.
+      </p>
+    </div>
+
+    <!-- Edge 2 -->
+    <div class="bg-white/5 p-6 rounded-2xl border border-white/10 backdrop-blur-md shadow-lg hover:shadow-purple-600/20 transition">
+      <h4 class="text-lg font-semibold text-purple-400 mb-2">Strategists + Creators</h4>
+      <p class="text-sm text-gray-300">
+        Our team blends branding strategy with killer content creation. You’ll have thinkers, writers, and designers crafting your brand.
+      </p>
+    </div>
+
+    <!-- Edge 3 -->
+    <div class="bg-white/5 p-6 rounded-2xl border border-white/10 backdrop-blur-md shadow-lg hover:shadow-indigo-600/20 transition">
+      <h4 class="text-lg font-semibold text-indigo-400 mb-2">We Build Authority, Not Just Looks</h4>
+      <p class="text-sm text-gray-300">
+        A pretty brand is useless without influence. We focus on trust, consistency, and a content engine that makes you the go-to expert.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-24 px-6 sm:px-12 md:px-24 text-center bg-white/5 border-y border-white/10">
+  <h3 class="text-3xl md:text-4xl font-bold mb-6 text-black">What Our Clients Say</h3>
+  <p class="text-gray-800 text-lg max-w-3xl mx-auto mb-12">
+    Real results from real people. Here’s how we’ve helped professionals elevate their online presence and become industry leaders.
+  </p>
+
+  <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto text-left">
+
+    <!-- Testimonial 1 -->
+    <div class="bg-white/5 p-6 rounded-2xl border border-white/10 backdrop-blur-md shadow-xl hover:shadow-blue-500/20 transition">
+      <p class="text-gray-900 text-sm italic mb-4">
+        "BrandMe transformed my LinkedIn from a resume into a reputation. Within weeks, I saw a spike in inbound leads and connection requests from ideal clients."
+      </p>
+      <div class="mt-4 flex items-center gap-3">
+        <img src="https://i.pravatar.cc/50?img=1" alt="Client 1" class="w-10 h-10 rounded-full border border-white/20" />
+        <div>
+          <h5 class="text-black font-medium text-sm">Aarav Mehta</h5>
+          <span class="text-gray-800 text-xs">SaaS Founder</span>
+        </div>
       </div>
-      <div class="group">
-        <div class="text-4xl font-bold text-cyan-400 mb-2 relative inline-block">
-          <span class="relative z-10">97%</span>
-          <div class="absolute -inset-2 bg-cyan-400/10 rounded-full scale-0 group-hover:scale-100 transition-transform duration-500"></div>
+    </div>
+
+    <!-- Testimonial 2 -->
+    <div class="bg-white/5 p-6 rounded-2xl border border-white/10 backdrop-blur-md shadow-xl hover:shadow-purple-500/20 transition">
+      <p class="text-gray-900 text-sm italic mb-4">
+        "I was hesitant at first, but BrandMe nailed my voice and message. Their content strategy helped me gain over 10K new followers in 3 months."
+      </p>
+      <div class="mt-4 flex items-center gap-3">
+        <img src="https://i.pravatar.cc/50?img=5" alt="Client 2" class="w-10 h-10 rounded-full border border-white/20" />
+        <div>
+          <h5 class="text-black font-medium text-sm">Neha Sharma</h5>
+          <span class="text-gray-800 text-xs">Leadership Coach</span>
         </div>
-        <p class="text-sm uppercase tracking-wider text-white/60">Success Rate</p>
       </div>
-      <div class="group">
-        <div class="text-4xl font-bold text-purple-400 mb-2 relative inline-block">
-          <span class="relative z-10">24/7</span>
-          <div class="absolute -inset-2 bg-purple-400/10 rounded-full scale-0 group-hover:scale-100 transition-transform duration-500"></div>
+    </div>
+
+    <!-- Testimonial 3 -->
+    <div class="bg-white/5 p-6 rounded-2xl border border-white/10 backdrop-blur-md shadow-xl hover:shadow-indigo-500/20 transition">
+      <p class="text-gray-900 text-sm italic mb-4">
+        "Not just pretty posts — BrandMe helped me become a trusted voice in my industry. I now get invited to speak at events and podcasts regularly."
+      </p>
+      <div class="mt-4 flex items-center gap-3">
+        <img src="https://i.pravatar.cc/50?img=8" alt="Client 3" class="w-10 h-10 rounded-full border border-white/20" />
+        <div>
+          <h5 class="text-black font-medium text-sm">Rohan Iyer</h5>
+          <span class="text-gray-800 text-xs">Marketing Consultant</span>
         </div>
-        <p class="text-sm uppercase tracking-wider text-white/60">Support</p>
       </div>
     </div>
   </div>
+</section>
 
-  <!-- Scrolling indicator -->
-  <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-    <svg class="w-8 h-8 text-white/50 hover:text-blue-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-    </svg>
-  </div>
+
+<!-- Contact CTA + Form Section -->
+<section id="contact" class="py-24 px-6 sm:px-12 md:px-24 bg-gradient-to-br from-[#0A0A0A] to-[#1B1B1B] text-white text-center">
+  <h3 class="text-3xl md:text-4xl font-bold mb-6">Ready to Build Your Brand?</h3>
+  <p class="text-gray-300 text-lg max-w-3xl mx-auto mb-12">
+    Let’s turn your name into a powerful, profitable brand. Fill out the form — and let’s get started.
+  </p>
+
+  <form class="max-w-2xl mx-auto bg-white/5 backdrop-blur-md border border-white/10 p-8 rounded-2xl shadow-lg space-y-6">
+
+    <!-- Name -->
+    <div class="text-left">
+      <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="John Doe"
+        class="w-full px-4 py-3 bg-transparent border border-white/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+    </div>
+
+    <!-- Email -->
+    <div class="text-left">
+      <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com"
+        class="w-full px-4 py-3 bg-transparent border border-white/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 transition">
+    </div>
+
+    <!-- Message -->
+    <div class="text-left">
+      <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Your Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Tell us where you need help..."
+        class="w-full px-4 py-3 bg-transparent border border-white/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"></textarea>
+    </div>
+
+    <!-- CTA Button -->
+    <button type="submit"
+      class="w-full py-3 bg-gradient-to-r from-blue-500 to-purple-600 hover:scale-105 transition rounded-full font-semibold text-white shadow-md">
+      🚀 Start Building My Brand
+    </button>
+  </form>
 </section>

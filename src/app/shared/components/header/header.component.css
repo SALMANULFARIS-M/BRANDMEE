@@ -1,13 +1,10 @@
-/* Add this to your global styles */
-section {
-  scroll-margin-top: 100px; /* Adjust this value to match your header height */
-  padding-top: 100px; /* Same as above */
-  margin-top: -100px; /* Negative margin to compensate */
+
+:host {
+  display: block;
 }
 
-/* Example section styling */
-#hero, #about, #contact {
-  min-height: 100vh;
-  position: relative;
+.backdrop-blur-glass {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
